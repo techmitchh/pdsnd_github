@@ -7,9 +7,9 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 # Global Variables
-selected_month = "".lower()
-selected_city = "".lower()
-selected_day = "".lower()
+selected_month = ""
+selected_city = ""
+selected_day = ""
 
 def get_filters():
     """
