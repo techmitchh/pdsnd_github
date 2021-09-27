@@ -4,7 +4,7 @@
 09/27/2021
 
 ### Project Title
-Github Project
+Github Workflow Project
 
 ### Description
 For this project I will be simulating a refactor workflow based on my previous Bikeshare project.
