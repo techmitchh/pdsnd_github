@@ -265,6 +265,9 @@ def view_raw(df):
     print('-'*40)
 
 def main():
+    global selected_month
+    global selected_day
+    global selected_city
     correct_selection = ['yes', 'no']
     select_restart = True
     while True:
@@ -285,6 +288,9 @@ def main():
                 select_restart = False
         
         if restart != 'no':
+            selected_month = ""
+            selected_city = ""
+            selected_day = ""
             continue
         else:
             break
