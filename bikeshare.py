@@ -7,9 +7,9 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 # Global Variables
-selected_month = "".lower()
-selected_city = "".lower()
-selected_day = "".lower()
+selected_month = ""
+selected_city = ""
+selected_day = ""
 
 def get_filters():
     """
@@ -273,6 +273,9 @@ def view_raw(df):
     print('-'*40)
 
 def main():
+    global selected_month
+    global selected_day
+    global selected_city
     correct_selection = ['yes', 'no']
     select_restart = True
     while True:
@@ -293,6 +296,9 @@ def main():
                 select_restart = False
         
         if restart != 'no':
+            selected_month = ""
+            selected_city = ""
+            selected_day = ""
             continue
         else:
             break
